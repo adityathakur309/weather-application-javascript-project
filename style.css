@@ -153,4 +153,7 @@ font-size: 1.5rem;
     .temp-sec{
         justify-content: flex-start;
     }
+    .inner-con{
+        padding: 1.4rem 0.6rem;
+    }
 }
