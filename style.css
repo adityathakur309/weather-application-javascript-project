@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+}
+body{
+    background-color: rgb(0, 0, 0,0.8);
+}
+
+.container{
+    width: 70%;
+    margin: 60px auto;
+    
+
+}
+/* innnercon start  */
+.inner-con{
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 1.4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+}
+/* form sec start  */
+.form-sec{
+    display: flex;
+    justify-content: flex-start;
+}
+form .input{
+    max-width: 300px;
+    position: relative;
+}
+.input i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: snow;
+    font-size: 1.1rem;
+    left: 10px;
+}
+.input input{
+    background-color: rgb(0, 0, 0,0.8);
+    padding: 0.4rem 2.2rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: snow;
+    font-size: 1.2rem;
+    width: 100%;
+}
+/* end  */
+
+/* middle-se start */ 
+.middle-sec{
+    display: flex;
+    justify-content: center;
+}
+.inner-middle h1,p{
+    margin-bottom: 5px;
+}
+.inner-middle .cloudes{
+    background-color: black;
+    color: snow;
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    text-align: center;
+}
+.inner-middle .cl-sec{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.inner-middle .cl-img{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 15px;
+}
+h1{color: rgb(0, 4, 255);
+font-size: 2.2rem;}
+.temp{display: flex;
+justify-content: center;
+margin-bottom: 15px;
+font-size: 1.5rem;
+}
+.temp-sec{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+}
+.weather-icon img{
+    width: 100px;
+    height: 100px;
+}
+/* end  */
+/* bottom star */
+.bottom-sec{
+    display: flex;
+    background-color: aliceblue;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    padding: 1rem 0.7rem;
+
+}
+.bottom-sec .temp-card{
+    flex-basis: 400px;
+    flex-grow: 1;
+    background-color: antiquewhite;
+    padding: 1.2rem 1rem;
+    border: none;
+    border-radius: 12px;
+
+}
+.temp-card i{
+    font-size: 1.4rem;
+}
+/* end  */
+/* end  */
+
+
+
+
+
+
+@media screen and (max-width:576px){
+    .container{
+        width: 100%;
+        padding: 0px 14px;
+    }
+    .middle-sec{
+        justify-content: flex-start;
+    }
+      .inner-middle .cl-sec{
+        justify-content: flex-start;
+    }
+    .inner-middle .cl-img{
+        justify-content: flex-start;
+    }
+   
+    .temp{
+        justify-content: flex-start;
+    }
+    .temp-sec{
+        justify-content: flex-start;
+    }
+}

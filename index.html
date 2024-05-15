@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="inner-con">
+            <h2>Weather Application</h2>
+            <div class="form-sec">
+                <!-- form start -->
+                <form class="form">
+                    <div class="input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="enter your city here" id="input-field">
+                    </div>
+                </form>
+                <!-- form end  -->
+
+
+            </div>
+            <div class="middle-sec">
+                <div class="inner-middle">
+                    <h1 class="city-name"></h1>
+                    <p class="date-time"></p>
+                    <div class="cl-sec">
+                        <p class="cloudes weather-foarcast"></p>
+                    </div>
+                    <div class="cl-img">
+                       <div class="weather-icon">
+                        <img src="" class="" alt="">
+                       </div> 
+                    </div>
+                    <div class="temp weather-temp">
+            
+                    </div>
+        
+                </div>
+                
+
+            </div>
+            <!-- middle end  -->
+            <!-- bottom start -->
+            <div class="bottom-sec">
+                <div class="temp-card wind-card">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="data">
+                        <h4>Wind</h4>
+                        <p class="wind-s">3.58m/s</p>
+                    </div>
+                </div>
+                <div class="temp-card ">
+                    <i class="fa-solid fa-key"></i>
+                    <div class="data">
+                        <h4>feels like</h4>
+                        <p class="feels-like">90&deg;</p>
+                    </div>
+                </div>
+                <div class="temp-card">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="data">
+                        <h4>humidity</h4>
+                        <p class="humidity">78%</p>
+                    </div>
+                </div>
+                <div class="temp-card">
+                    <i class="fa-regular fa-gem"></i>
+                    <div class="data">
+                        <h4>pressure</h4>
+                        <p class="pressure">783hpa</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end  -->
+        </div>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
