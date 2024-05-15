@@ -42,13 +42,13 @@ let getDate  = (date) => {
 // get data from api 
 
 let getWeatherData =  async ()=>{
-    cityName.innerHTML = "Loading..."
+    cityName.innerHTML = "Loading...";
     let apiUrl = `http://api.weatherapi.com/v1/current.json?key=a8836314218a4aaeb17160841241405&q=${city}`
 
     try {
         let response = await fetch(apiUrl);
        let data = await response.json();
-     let {location,current,condition} = data;
+     let {location,current} = data;
      cityName.innerHTML = `${city},${location.country}`
      dateTime.innerHTML = `${getDate(current.last_updated_epoch
      )}`;
