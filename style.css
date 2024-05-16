@@ -57,14 +57,60 @@ form .input{
 }
 /* end  */
 
+
 /* middle-se start */ 
 .middle-sec{
     display: flex;
     justify-content: center;
 }
-.inner-middle h1,p{
-    margin-bottom: 5px;
+/* loader start  */
+.loader{
+    width:60px ;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(174, 0, 255);
+    position: relative;
+    animation: rotate 1s infinite linear reverse;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80%;
+        aspect-ratio: 1;
+        background-color: white;
+        border-radius: inherit;
+        /* z-index: 1; */
+
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: -15px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 30%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        box-shadow: 2px 2px 30px rgb(51, 3, 97);
+        background-color: rgb(43, 226, 134);
+        z-index: 1;
+    }
 }
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* end  */
+.inner-middle h1,p{
+    margin-bottom: 20px;
+}
+h1{display: flex;
+justify-content: center;}
 .inner-middle .cloudes{
     background-color: black;
     color: snow;
@@ -156,4 +202,5 @@ font-size: 1.5rem;
     .inner-con{
         padding: 1.4rem 0.6rem;
     }
+    h1{justify-content: flex-start;}
 }

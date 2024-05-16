@@ -42,7 +42,7 @@ let getDate = (date) => {
 // get data from api 
 
 let getWeatherData = async () => {
-    cityName.innerHTML = "Loading...";
+    cityName.innerHTML = `<div class = "loader"> </div>`;
     let apiUrl = `http://api.weatherapi.com/v1/current.json?key=a8836314218a4aaeb17160841241405&q=${city}`
 
     try {
